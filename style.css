@@ -1,0 +1,90 @@
+
+.carousel-inner .carousel-item img {
+max-width: 800px;    /* Adjust the width (percentage or px) */
+max-height: 800px; /* Adjust the height (px or other units) */
+object-fit: contain; /* Ensures the aspect ratio is maintained */
+display: block;  /* Makes the image behave like a block element */
+margin: 0 auto;  /* Centers the image horizontally */
+}
+
+
+
+/* Ensure the images inside the card have the same height */
+.card-img-top {
+object-fit: cover; /* Make sure the image fills the space without distortion */
+height: 200px; /* Fixed height for the images */
+width: 100%; /* Image should cover the width of the card */
+}
+
+/* Ensure the card body takes up remaining space */
+.card-body {
+flex-grow: 1; /* Allow the card body to expand and fill space */
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Space out title, text, and buttons */
+}
+
+
+
+.navbar-nav .nav-link {
+  font-weight: bold; /* Keep text bold */
+  font-size: 30px;    /* Adjust size here */
+  padding: 10px 15px; /* Add some padding to increase the clickable area */
+}
+
+/* style.css */
+.card {
+  margin-bottom: 20px; /* Add custom bottom margin */
+}
+
+/* Add some custom styles for spacing or alignment */
+.text-center a {
+  font-size: 16px;  /* Adjust font size */
+  color: #333;      /* Change text color */
+  text-decoration: none;
+}
+
+/* Style for Font Awesome icons */
+i {
+  font-size: 24px; /* Set icon size */
+  color: #333;     /* Set icon color */
+  margin-right: 10px; /* Space between icons */
+}
+
+i:hover {
+  color: #007bff;  /* Change color when hovering */
+}
+
+/* Centering the social icons */
+.social-icons {
+  display: flex;              /* Use flexbox to align items */
+  justify-content: center;    /* Center the items horizontally */
+  align-items: center;        /* Center the items vertically */
+  gap: 15px;                  /* Space between icons */
+  font-size: 18px;            /* Optional: Font size for text */
+}
+
+/* Styling the icons */
+.social-icons i {
+  font-size: 32px;            /* Set icon size */
+  margin-right: 5px;          /* Space between the icon and the text */
+  color: #333;                /* Default icon color */
+}
+
+/* Optional: Add hover effect */
+.social-icons i:hover {
+  color: #007bff;             /* Hover color */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+
+
+
+
