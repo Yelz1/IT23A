@@ -44,47 +44,40 @@ justify-content: space-between; /* Space out title, text, and buttons */
   text-decoration: none;
 }
 
-/* Style for Font Awesome icons */
-i {
-  font-size: 24px; /* Set icon size */
-  color: #333;     /* Set icon color */
-  margin-right: 10px; /* Space between icons */
-}
-
-i:hover {
-  color: #007bff;  /* Change color when hovering */
-}
-
-/* Centering the social icons */
-.social-icons {
-  display: flex;              /* Use flexbox to align items */
-  justify-content: center;    /* Center the items horizontally */
-  align-items: center;        /* Center the items vertically */
-  gap: 15px;                  /* Space between icons */
-  font-size: 18px;            /* Optional: Font size for text */
-}
-
-/* Styling the icons */
-.social-icons i {
-  font-size: 32px;            /* Set icon size */
-  margin-right: 5px;          /* Space between the icon and the text */
-  color: #333;                /* Default icon color */
-}
-
-/* Optional: Add hover effect */
-.social-icons i:hover {
-  color: #007bff;             /* Hover color */
-}
-
-.social-icons {
+.footer .d-flex {
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
   align-items: center;
-  font-size: 18px;
-  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.social-icons a {
+  margin-left: 10px; /* Adds space between the social media links */
 }
 
 
+/* Animation for fading in elements */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Slight movement to add dynamic effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Apply the fade-in animation to the main content */
+body {
+  animation: fadeIn 1s ease-in-out;
+}
 
+/* Fade-in for individual elements (navbar, carousel, cards, etc.) */
+.navbar, .carousel, .card {
+  animation: fadeIn 1.5s ease-in-out;
+}
 
+.navbar {
+  backdrop-filter: blur (30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37) ; border: 1.5px solid rgba(255, 255, 255, 0.18) ;
+}
