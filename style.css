@@ -1,46 +1,46 @@
 
 .carousel-inner .carousel-item img {
-max-width: 800px;    /* Adjust the width (percentage or px) */
-max-height: 800px; /* Adjust the height (px or other units) */
-object-fit: contain; /* Ensures the aspect ratio is maintained */
-display: block;  /* Makes the image behave like a block element */
-margin: 0 auto;  /* Centers the image horizontally */
+max-width: 800px;   
+max-height: 800px; 
+object-fit: contain; 
+display: block;  
+margin: 0 auto;  
 }
 
 
 
-/* Ensure the images inside the card have the same height */
+
 .card-img-top {
-object-fit: cover; /* Make sure the image fills the space without distortion */
-height: 200px; /* Fixed height for the images */
-width: 100%; /* Image should cover the width of the card */
+object-fit: cover; 
+height: 200px; 
+width: 100%; 
 }
 
-/* Ensure the card body takes up remaining space */
+
 .card-body {
-flex-grow: 1; /* Allow the card body to expand and fill space */
+flex-grow: 1; 
 display: flex;
 flex-direction: column;
-justify-content: space-between; /* Space out title, text, and buttons */
+justify-content: space-between; 
 }
 
 
 
 .navbar-nav .nav-link {
-  font-weight: bold; /* Keep text bold */
-  font-size: 30px;    /* Adjust size here */
-  padding: 10px 15px; /* Add some padding to increase the clickable area */
+  font-weight: bold; 
+  font-size: 30px;    
+  padding: 10px 15px; 
 }
 
-/* style.css */
+
 .card {
-  margin-bottom: 20px; /* Add custom bottom margin */
+  margin-bottom: 20px; 
 }
 
-/* Add some custom styles for spacing or alignment */
+
 .text-center a {
-  font-size: 16px;  /* Adjust font size */
-  color: #333;      /* Change text color */
+  font-size: 16px;  
+  color: #333;     
   text-decoration: none;
 }
 
@@ -51,15 +51,15 @@ justify-content: space-between; /* Space out title, text, and buttons */
 }
 
 .social-icons a {
-  margin-left: 10px; /* Adds space between the social media links */
+  margin-left: 10px; 
 }
 
 
-/* Animation for fading in elements */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20px); /* Slight movement to add dynamic effect */
+    transform: translateY(20px); 
   }
   100% {
     opacity: 1;
@@ -67,12 +67,12 @@ justify-content: space-between; /* Space out title, text, and buttons */
   }
 }
 
-/* Apply the fade-in animation to the main content */
+
 body {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Fade-in for individual elements (navbar, carousel, cards, etc.) */
+
 .navbar, .carousel, .card {
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -80,4 +80,17 @@ body {
 .navbar {
   backdrop-filter: blur (30px);
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37) ; border: 1.5px solid rgba(255, 255, 255, 0.18) ;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.card:active {
+  transform: scale(0.95); 
 }
